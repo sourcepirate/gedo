@@ -2,9 +2,12 @@
   "name": "gedo",
   "version": "0.3.0",
   "description": "Make your private artifactory easily with s3",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "gedo": "./index.js"
   },
   "keywords": [
     "docker"
