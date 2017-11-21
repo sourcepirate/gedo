@@ -1,6 +1,6 @@
 {
   "name": "gedo",
-  "version": "0.3.1",
+  "version": "0.5.0",
   "description": "Make your private artifactory easily with s3",
   "main": "./lib/index.js",
   "scripts": {

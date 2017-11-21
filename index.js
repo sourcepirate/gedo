@@ -7,7 +7,7 @@
 var program = require('commander');
 var gedo = require('./lib');
 
-program.version("0.3.1");
+program.version("0.5.0");
 
 program
     .command("push <image>")
@@ -34,7 +34,7 @@ program
     .option('-b, --bucket <bucket>', 'Bucket on S3')
     .option('-r, --region <region>', "S3 Region", "us-east-1")
     .action(function (image, options) {
-        gedo.pull(option.bucket, option.region, image);
+        gedo.pull(options.bucket, options.region, image);
     })
     .on("--help", function () {
         console.log("gedo pull <imagename>");
